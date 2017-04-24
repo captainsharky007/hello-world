@@ -1,0 +1,135 @@
+@import "variables.less";
+
+.white { 
+    background-color: white;
+}
+
+.content {
+    padding: 30px;
+}
+
+.expansion-panel li {
+    background: @white;
+    border-bottom: 1px solid @def-border;
+    box-shadow: @panel-shadow;
+    width: auto;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.expansion-panel span
+{
+    margin: 5px 0 -5px 0;
+}
+
+.expansion-panel .relative section
+{
+    position: relative!important;
+}
+
+
+
+.expansion-panel header
+{
+   padding: 30px;
+}
+
+.expansion-panel .active {
+    margin: 20px 0px;
+    transition: .2s;
+            overflow: hidden;
+}
+
+.expansion-panel section {
+            padding: 0px 30px;
+display:block;
+    opacity: 0;
+    position: absolute;
+}
+
+.expansion-panel li.active section {
+    height: auto;
+    opacity: 1;
+}
+
+.active > header > h2 {
+    color: @sp-green;
+}
+
+    .expansion-panel .active section {
+
+        display: block;
+        box-sizing: border-box;
+    }
+
+.expansion-panel .nav {
+    margin: 0 -30px;
+    border-top: 1px solid @def-border;
+    padding: 20px 60px;
+    text-align: right;
+    
+}
+
+.expansion-panel .previuos {
+    opacity: 0;
+}
+
+.expansion-panel .loading {
+            box-sizing: border-box;
+        border-bottom: 4px solid orange;
+    }
+
+
+@media screen and (min-width:900px){
+    
+
+    
+    .expansion-panel li {
+        margin: 0 40px;
+    }
+
+    .expansion-panel .active section {
+        padding: 0px 30px;
+                display: block;
+    }
+    .expansion-panel .active {
+        padding: 0px 0px;
+        border-radius: 4px;
+        margin: 40px 0px;
+
+}
+    .expansion-panel li:first-child {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.expansion-panel li:last-child {
+    border-radius: 0 0 4px 4px;
+}
+    
+        .expansion-panel .loading {
+        border-radius: 4px 4px 0 0;
+    }
+    
+    .expansion-panel section {
+        padding: 0;
+    }
+
+}
+
+.mobile-page .transition section {
+    display: none;
+}
+
+
+
+
+.mobile-page li.active {
+    margin: 0px;
+}
+
+
+@media screen and (max-width:900px){
+
+    
+}

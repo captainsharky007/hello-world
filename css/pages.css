@@ -1,0 +1,25 @@
+@import "variables.less";
+
+.mobile-page { 
+    position: absolute;
+    width: 100%;
+   transition: right 0.5s;
+    
+}
+.mobile-right{
+    right: 0;
+}
+.page-2 {
+    right: -100%;
+    z-index: 2;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.15)!important;
+    padding-top: 30px !important;
+    padding-bottom: 60px !important;
+    min-height: 700px;
+    
+  position: fixed !important;
+}
+
+.active-page {
+    transition:right 0.3s; 
+}
